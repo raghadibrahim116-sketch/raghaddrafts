@@ -1,0 +1,136 @@
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI';
+    transition:0.3s;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+/* ================= NAVBAR  ================= */
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #333333ee;
+    padding: 30px;
+    width: 80%;
+    border-radius: 300px;
+    margin: 20px auto;
+
+    position: sticky;
+    top: 20px;
+
+    z-index: 2000;
+    box-shadow: inset 0 0 80px #000000aa, 0 0 40px #000000aa;
+}
+nav{
+    margin: 0 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: fit-content;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 30px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+nav a:hover{
+    text-shadow: 0 0 10px white;
+}
+
+.icons-header{
+    margin: 0 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: fit-content;
+    color: white;
+}
+
+.icons-header i{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.search-text{
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+
+/* ================= SHOP GRID ================= */
+/* SHOP CONTAINER */
+.shop-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 50px;
+    justify-content: center;
+}
+
+/* CARD */
+.card{
+    background:#222;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 0 20px #000;
+    width: 400px;              /* مهم مع flex */
+    transition: 0.3s ease;     /* مهم للـ hover */
+}
+
+/* IMAGE */
+.card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+/* CONTENT */
+.card-content{
+    padding:15px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.price{
+    color:#aaa;
+    margin-bottom:10px;
+}
+
+/* BUTTON */
+button{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    background:white;
+    color:black;
+    transition: 0.3s;
+}
+
+button:hover{
+    background:black;
+    color:white;
+}
+
+/* HOVER EFFECT */
+.card:hover{
+    transform: translateY(-10px);
+}

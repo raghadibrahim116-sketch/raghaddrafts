@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RAI STORE - Auth</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI';
+}
+
+/* MAIN */
+body{
+    height:100vh;
+    display:flex;
+    background:#111;
+}
+
+/* LEFT IMAGE */
+.left{
+    width:50%;
+    background:url('https://images.pexels.com/photos/7679720/pexels-photo-7679720.jpeg') center/cover no-repeat;
+    position:relative;
+}
+
+.left::after{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+}
+
+/* RIGHT FORM */
+.right{
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#111;
+}
+
+/* FORM BOX */
+.form-box{
+    width:320px;
+    color:white;
+}
+
+/* LOGO */
+.logo{
+    font-size:24px;
+    margin-bottom:40px;
+    letter-spacing:3px;
+}
+
+/* TITLE */
+h2{
+    margin-bottom:20px;
+    font-weight:500;
+}
+
+/* INPUT */
+.input-box{
+    position:relative;
+    margin-bottom:15px;
+}
+
+.input-box input{
+    width:100%;
+    padding:12px 15px;
+    border:none;
+    border-bottom:1px solid #555;
+    background:transparent;
+    color:white;
+    outline:none;
+}
+
+/* BUTTON */
+button{
+    width:100%;
+    padding:12px;
+    margin-top:20px;
+    border:none;
+    background:white;
+    color:black;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#ddd;
+}
+
+/* SWITCH */
+.switch{
+    margin-top:20px;
+    font-size:14px;
+    color:#aaa;
+    cursor:pointer;
+}
+
+.switch:hover{
+    color:white;
+}
+
+/* SIGNUP HIDDEN */
+#signup{
+    display:none;
+}
+
+/* TOGGLE */
+.active #login{
+    display:none;
+}
+
+.active #signup{
+    display:block;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- LEFT -->
+<div class="left"></div>
+
+<!-- RIGHT -->
+<div class="right">
+    <div class="form-box" id="box">
+
+        <div class="logo">RAI STORE</div>
+
+        <!-- LOGIN -->
+        <div id="login">
+            <h2>Sign In</h2>
+
+            <div class="input-box">
+                <input type="text" placeholder="Username">
+            </div>
+
+            <div class="input-box">
+                <input type="password" placeholder="Password">
+            </div>
+
+            <button>Login</button>
+
+            <div class="switch" onclick="toggle()">
+                Don’t have an account? Sign Up
+            </div>
+        </div>
+
+        <!-- SIGNUP -->
+        <div id="signup">
+            <h2>Create Account</h2>
+
+            <div class="input-box">
+                <input type="text" placeholder="Username">
+            </div>
+
+            <div class="input-box">
+                <input type="email" placeholder="Email">
+            </div>
+
+            <div class="input-box">
+                <input type="password" placeholder="Password">
+            </div>
+
+            <button>Sign Up</button>
+
+            <div class="switch" onclick="toggle()">
+                Already have an account? Login
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+function toggle(){
+    document.getElementById("box").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style-index.css">
+    <script src="index-functions.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="shop.html">Shop</a>
+        </nav>
+        <div class="icons-header"> 
+            <form action="">
+            <input type="text" list="categories" placeholder="Search..." class="search-text">
+            <datalist id="categories">
+                <option value="All">
+                <option value="Men">
+                <option value="Women">
+                <option value="Kids">
+            </datalist>
+            </form>
+            <i class="fa-solid fa-basket-shopping" ></i>
+            <i class="fa-solid fa-user" onclick="goToPage()"></i>
+           
+        </div>
+    </header>
+    <section id="home">
+         <div class="s1-h">
+         <h1>RAI STORE</h1>
+         <h2>Your Style, Your Choice</h2>
+         </div>
+        
+        <div class="img1-s1">
+       
+        </div>
+        <div class="img2-s1">
+         
+        </div>
+     
+    </section>
+
+<section class="about-section" id="about">
+
+    <div class="about-left">
+        <h2>ABOUT RAI STORE</h2>
+        <p>
+            RAI STORE is more than just fashion — it’s a lifestyle.  
+            We bring you modern, stylish, and high-quality clothing 
+            for men, women, and kids.  
+            Our mission is to help you express your identity through style.
+        </p>
+
+        <button onclick="goToShop()">Explore Shop</button>
+    </div>
+
+    <div class="about-right">
+        <div class="img-box">
+            
+        </div>
+    </div>
+
+</section>
+<section class="contact-section" id="contact">
+
+    <div class="contact-left">
+        <h2>CONTACT US</h2>
+        <p>
+            Have a question or need help?  
+            Send us a message and our team will get back to you as soon as possible.
+        </p>
+
+        <div class="contact-info">
+            <p><i class="fa-solid fa-phone"></i> +961 70 000 000</p>
+            <p><i class="fa-solid fa-envelope"></i> info@raistore.com</p>
+            <p><i class="fa-solid fa-location-dot"></i> Lebanon</p>
+        </div>
+    </div>
+
+    <div class="contact-right">
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+</section>
+<div class="social-media">
+    <h3>OUR SOCIALS</h3>
+
+    <div class="social-icons">
+        <a href="#" class="icon ig">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="#" class="icon tk">
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+
+        <a href="#" class="icon fb">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+    </div>
+</div>
+</body>
+</html>
